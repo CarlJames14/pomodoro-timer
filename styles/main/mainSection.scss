@@ -1,0 +1,142 @@
+@use '../util' as *;
+
+.container {
+  width: 90%;
+  height: 70vh;
+  border-radius: rem(55);
+  background-color: $primary;
+  box-shadow: 12px 12px 16px 0px rgba(0, 0, 0, 0.2),
+    -8px -8px 16px 0px rgba(233, 233, 233, 0.2);
+
+  @include breakpoint(medium) {
+    width: 80%;
+  }
+
+  @include breakpoint(large) {
+    height: 90vh;
+    width: rem(600);
+  }
+
+  .title {
+    text-align: center;
+    width: 90%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: rem(32);
+
+    @include breakpoint(medium) {
+      font-size: rem(24);
+    }
+  }
+
+  .type {
+    font-size: rem(18);
+    background-color: $green-2;
+    color: $white;
+    padding: rem(10) rem(20);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: rem(30);
+
+    @include breakpoint(medium) {
+      font-size: rem(32);
+      padding: rem(15) rem(25);
+    }
+  }
+
+  .clock {
+    position: relative;
+
+    height: rem(150);
+
+    width: rem(150);
+    padding: 0 rem(70);
+    font-size: rem(32);
+    font-weight: 700;
+    border: 3px solid $green-2;
+    border-radius: 50%;
+    margin: rem(25) 0;
+
+    @include breakpoint(medium) {
+      width: rem(250);
+      height: rem(250);
+      margin: rem(45) 0;
+    }
+
+    .mins {
+      margin-right: rem(5);
+      @include breakpoint(medium) {
+        font-size: rem(48);
+      }
+    }
+
+    .sec {
+      margin-left: rem(5);
+      @include breakpoint(medium) {
+        font-size: rem(48);
+      }
+    }
+  }
+
+  .btn-group {
+    margin-left: rem(70);
+    .fa,
+    .fas {
+      font-size: rem(20);
+    }
+    button:not(last-child) {
+      margin-right: rem(16);
+    }
+    .pause {
+      .fa-pause::after,
+      .fa-pause,
+      .fa-pause::before {
+        font-size: rem(28) !important;
+        color: $green-1;
+      }
+      cursor: pointer;
+    }
+
+    .play {
+      .fa-play,
+      .fa-play::before,
+      .fa-play::after {
+        font-size: rem(28) !important;
+        color: $green-1;
+      }
+      display: block;
+      cursor: pointer;
+    }
+    .play2 {
+      .fa-play,
+      .fa-play::before,
+      .fa-play::after {
+        font-size: rem(28) !important;
+        color: $green-1;
+      }
+
+      cursor: pointer;
+    }
+
+    .reset {
+      > i {
+        color: $white;
+      }
+      cursor: pointer;
+    }
+  }
+
+  .form {
+    margin-top: rem(32);
+    width: 80%;
+  }
+}
+
+.d-none {
+  display: none !important;
+}
+
+.break {
+  background-color: $red !important;
+}

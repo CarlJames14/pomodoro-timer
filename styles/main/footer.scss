@@ -1,0 +1,34 @@
+@use '../util' as *;
+
+.footer {
+  width: 90%;
+  margin-top: rem(40);
+
+  .fab,
+  .far {
+    font-size: rem(18);
+
+    &:not(last-child) {
+      margin-right: rem(5);
+    }
+  }
+
+  h1 {
+    color: $white;
+    font-size: rem(14);
+    margin-top: rem(10);
+    text-align: center;
+
+    @include breakpoint(large) {
+      text-align: unset;
+    }
+  }
+
+  @include breakpoint(large) {
+    width: 15%;
+    position: absolute;
+    bottom: 10vh;
+    left: 10%;
+    display: unset;
+  }
+}

@@ -1,0 +1,63 @@
+@use '../util' as *;
+
+.flex {
+  display: flex;
+
+  &-ai-c {
+    align-items: center;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-d-c {
+    flex-direction: column;
+  }
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+input {
+  background-color: $white;
+  border: none;
+  width: 40%;
+  height: rem(55);
+  padding: rem(10);
+  text-align: center;
+  color: $black;
+  font-size: rem(22);
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: rem(20);
+  border-radius: rem(10);
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  &[type="number"] {
+    -moz-appearance: textfield;
+    /* Firefox */
+  }
+
+  &:first-child {
+    margin-right: rem(20);
+  }
+
+  &::placeholder {
+    color: $green-2;
+    font-size: rem(14);
+    font-weight: 700;
+  }
+}

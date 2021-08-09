@@ -1,0 +1,17 @@
+{
+  "name": "pomodoro-timer",
+  "version": "1.0.0",
+  "description": "The website that will help you for your time management.",
+  "main": "script.js",
+  "scripts": {
+    "dev": "parcel ./index.html",
+    "build": "parcel build ./index.html"
+  },
+  "keywords": ["Pomodoro", "Timer", "Pomodoro Timer", "Time", "Time management"],
+  "author": "Carl James Roxas",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.37.5"
+  }
+}

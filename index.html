@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The website that will help you for your time management."
+    />
+    <meta
+      name="keywords"
+      content="Pomodoro, Timer, Pomodoro Timer, Time, Time management"
+    />
+    <meta name="author" content="Carl James Roxas" />
+
+    <!-- Font: Quicksand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/ecf7cf11f2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- styling -->
+    <link rel="stylesheet" href="./styles/style.scss" />
+
+    <title>Pomodoro Timer</title>
+  </head>
+  <body class="flex flex-ai-c flex-jc-c flex-d-c zoom">
+    <!-- Start of The Main Container -->
+    <main class="container flex flex-ai-c flex-d-c flex-jc-c">
+      <h1 class="title">Pomodoro Timer</h1>
+      <h1 class="type">Focus Time</h1>
+      <div class="clock flex flex-ai-c flex-jc-c">
+        <div class="mins">00</div>
+        <div>:</div>
+        <div class="sec">00</div>
+        <audio src="./bell.mp3"></audio>
+      </div>
+      <div class="btn-group flex flex-ai-c flex-jc-c" id="btngrp">
+        <button class="pause d-none" id="btn-1">
+          <i class="fas fa-pause"></i>
+        </button>
+        <button class="play" id="btn-2">
+          <i class="fas fa-play"></i>
+        </button>
+        <button class="play2 d-none" id="btn-4">
+          <i class="fas fa-play"></i>
+        </button>
+        <button class="reset" id="btn-3">
+          <i class="fas fa-redo"></i>
+        </button>
+      </div>
+
+      <form action="." class="form flex flex-ai-c flex-jc-c">
+        <input
+          type="number"
+          value="25"
+          id="focusTime"
+          placeholder="Focus Time"
+        />
+        <input
+          type="number"
+          value="5"
+          id="breakTime"
+          placeholder="Break Time"
+        />
+      </form>
+    </main>
+    <!-- End of The Main Container -->
+
+    <!-- Start of Footer -->
+    <footer class="footer flex flex-ai-c flex-jc-c flex-d-c">
+      <div class="links">
+        <a href="https://twitter.com/Carllljamessss" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://github.com/CarlJames14" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.facebook.com/crljms.rxs" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+      </div>
+      <h1>&copy; 2021 | Design and Develop by Carl James Roxas</h1>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- javascript -->
+    <script src="./js/timer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+@keyframes pulse {
+  0%,
+  100% {
+    transform: rotate(-90deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(-90deg) scale(1.05);
+  }
+
+  75% {
+    transform: rotate(-90deg) scale(0.08);
+  }
+}
